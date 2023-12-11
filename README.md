@@ -14,30 +14,28 @@ It have the basic functionality of a rice cooker :
 ### Requirements
 _Here are the requirements to execute the application :_
 
-#### Install Ruby :
-* On Linux or macOS, Ruby is often pre-installed. You can check by typing ruby -v in the terminal. If it's not installed, you can use a package manager like apt (for Ubuntu/Debian) or brew (for macOS) to install it.
-* On Windows, you can download the RubyInstaller from [rubyinstaller.org](https://rubyinstaller.org/downloads/) and follow the installation instructions.
+#### Install Lua :
+* If Lua is not installed on your system, you need to install it first. You can download the Lua interpreter from the official website: [download Lua](https://www.lua.org/download.html)
 
 ### How to use
 Navigate to the root of the project and execute the following command :
 ```sh
-   ruby rice_cooker.rb
+   lua rice_cooker.lua
 ```
 
 ### Standard used :
 The standard or naming conventions used in this application are from the following documentations :
-[rubystyle.guide](https://rubystyle.guide/)
+[Lua manual](https://www.lua.org/manual/5.4/)
 
 
 ### Linter :
 If you want to use a linter for this program, you can use the following command :
+- Install luacheck :
+```sh
+   luarocks install luacheck
+```
 - Go to the root of the project
 - Execute this command :
 ```sh
-   rubocop
-```
-
-If it does not work, you probably should install it before using the command :
-```sh
-   gem install rubocop
+   luacheck rice_cooker.lua
 ```
