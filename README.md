@@ -14,30 +14,28 @@ It have the basic functionality of a rice cooker :
 ### Requirements
 _Here are the requirements to execute the application :_
 
-#### Install Ruby :
-* On Linux or macOS, Ruby is often pre-installed. You can check by typing ruby -v in the terminal. If it's not installed, you can use a package manager like apt (for Ubuntu/Debian) or brew (for macOS) to install it.
-* On Windows, you can download the RubyInstaller from [rubyinstaller.org](https://rubyinstaller.org/downloads/) and follow the installation instructions.
+#### Install Golang :
+* If Golang is not installed on your system, you need to install it first. You can download it from the official website: [download Golang](https://go.dev/dl/)
 
 ### How to use
 Navigate to the root of the project and execute the following command :
 ```sh
-   ruby rice_cooker.rb
+   go run riceCooker.go
 ```
 
 ### Standard used :
 The standard or naming conventions used in this application are from the following documentations :
-[rubystyle.guide](https://rubystyle.guide/)
+[Golang manual](https://golang.org/doc/effective_go.html)
 
 
 ### Linter :
 If you want to use a linter for this program, you can use the following command :
+- Install golangci-lint :
+```sh
+   go install github.com/golangci/golangci-lint/cmd/golangci-lint@latest
+```
 - Go to the root of the project
 - Execute this command :
 ```sh
-   rubocop
-```
-
-If it does not work, you probably should install it before using the command :
-```sh
-   gem install rubocop
+   golangci-lint run
 ```
