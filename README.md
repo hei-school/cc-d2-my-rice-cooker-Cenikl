@@ -14,30 +14,24 @@ It have the basic functionality of a rice cooker :
 ### Requirements
 _Here are the requirements to execute the application :_
 
-#### Install Ruby :
-* On Linux or macOS, Ruby is often pre-installed. You can check by typing ruby -v in the terminal. If it's not installed, you can use a package manager like apt (for Ubuntu/Debian) or brew (for macOS) to install it.
-* On Windows, you can download the RubyInstaller from [rubyinstaller.org](https://rubyinstaller.org/downloads/) and follow the installation instructions.
+#### Install Dart SDK :
+* If Dart is not installed on your system, you need to install it first. You can download it from the official website: [download Dart](https://dart.dev/get-dart)
 
 ### How to use
 Navigate to the root of the project and execute the following command :
 ```sh
-   ruby rice_cooker.rb
+   dart rice_cooker.dart
 ```
 
 ### Standard used :
 The standard or naming conventions used in this application are from the following documentations :
-[rubystyle.guide](https://rubystyle.guide/)
+[Dart Style Guide](https://dart.dev/guides/language/effective-dart/stylel)
 
 
 ### Linter :
-If you want to use a linter for this program, you can use the following command :
+If you want to use a linter for this program, Dart has a linter called Dart Analyzer, and it is often used with the Dart SDK, you just need to use command after :
 - Go to the root of the project
 - Execute this command :
 ```sh
-   rubocop
-```
-
-If it does not work, you probably should install it before using the command :
-```sh
-   gem install rubocop
+   dart analyze
 ```
